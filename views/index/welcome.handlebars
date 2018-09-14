@@ -1,0 +1,42 @@
+<div class="center-align">
+  <h2>Welcome</h2>
+</div>
+<div class="center-align">
+  <h5>English to French translator</h5>
+</div>
+
+<div class="row">
+  <div class="col s12 m6">
+    <div class="card story-text">
+      <div class="card-content">
+        <span class="card-title center-align">Input</span>
+
+        <form method="post">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="textarea1" name="body" class="materialize-textarea"></textarea>
+              <label for="textarea1">Textarea</label>
+            </div>
+          </div>
+          <input type="submit" value="Translate" class="btn ">
+        </form>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col s12 m6">
+    <div class="card story-text">
+      <div class="card-content">
+        <span class="card-title center-align">Output</span>
+        {{#if tran}}
+          <br><br><br>
+          <p>{{tran.text}}</p>
+        {{else}}
+          <br><br><br>
+          <p>No text</p>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+</div>
